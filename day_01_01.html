@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko-KR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Document</title>
+ <style type="text/css">
+/*
+    내용을 설명하는데 작성하는것! 외부에 보이지않는것 (주석) 단축키는 컨트롤 슬러쉬
+       스타일 내부에서의 주석
+*/
+/*
+     
+     ----------------------------css-----------------------
+*/
+     
+ 
+     
+     h1{background-color:#fab;}
+     h2{background-color:azure}
+     h3,h4 {background-color:#0ff;}
+     h1,h3,h6{color:#afc;}
+     p{background-color:#aaa;}
+     .box_01{color:#3a3;}
+     p.box_01Pbackground-color:#fcf;}
+     span.box_01{background-color:#0cf;}
+     span{background-color:#ff7;}
+     
+     b, i, u, strike, s{background-color:#fff; width: 100px; height:100px; display:block;}
+     
+     .box_02{width:500px; height:100px; background-color:#ac0;}
+     .box_02 *{color:#f00;}
+     
+     /*inline:크기값이X, 줄바꿈이 일어나지 않는다.
+     block: 크기값이 O, 줄바꿈이 일어난다.
+     반드시, 인라인태그는 블록태그안에 담겨야 한다.
+     */
+    </style>
+    <script type="test/javascript">
+    //한줄주석
+    
+    /*두줄주석 */
+    </script>
+</head>
+<body>
+        <h1>가장 중요한 제목 : <br />
+         문서전체에서 단 한번만 사용이 가능 !!!</h1>
+        <h2><a href="day_02_01.html#box_02">두번째 중요한 제목 :  여러번 사용이 가능</a></h2>
+        <h3>세번째 주용한 제목</h3>
+        <h4>네번째 중요한 제목</h4>
+        <h5>다섯번째 중요한 제목</h5>
+        <h6>가장 낮은 레벨의 제복</h6><hr /> 내용상의 분류가 되어 흐름이 전환되는 부분에는 hr태그를 작성한다
+        <p class= "box_01">   내용을 작성하는 태그.  줄바꿈 X 띄어쓰기는 한번밖에 사용되지않음.&lt;br /&gt; 그리고(&amp;)
+         여러개의 내용 즉,여러개의 p태그를 사용할수있다.
+        내용상 &lt;br /&gt;은 줄바꿈의 의미를 가진다  
+        내용상 어느부분을 일부 영역으로 별도 표기할때에는 span태그를 사용한다.
+        <span class="box_01">      &lt;spaln&gt;</span>
+        <span>&lt;span&gt; 태그는 특별한 의미가 없다.</span> </p>
+        <hr />
+        
+        <ol>
+            <li>1월</li>
+            <li>2월</li>
+            <li>3월</li>
+            <li><ul><li>1일</li>
+            <li>2일</li>
+            <li>3일</li>
+            <li><ol>
+            <li>월요일</li>
+            <li>화요일</li>
+            <li>수요일</li>
+            </ol></li>
+            </ul></li>
+        </ol>
+        
+    <p>코드중 일부는 강조를 표현하는 태그가 있다.
+      <b>굵은글씨</b><i>기울임</i><u>밑줄</u><strike>취소선</strike><s>취소선</s>
+       사실은: 사용하지 않는 코드(눈에 보이는 사람들에 대해서만 보여주는 강조)
+      </p>
+      <p class="box_02">실제 사용해야하는강조는
+      <strong>굵은글씨</strong>, <em>기울임</em>,<ins>밑줄</ins>,<del>취소</del>
+      why? 웹 접근성을 고려한 코드작성
+      </p>
+      
+      
+       
+        <pre></pre>
+</body>
+</html>

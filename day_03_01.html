@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+<!--    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=2.0" />-->
+   <meta name="viewport" content="initial-scale=1.0" />
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="60x60" href="#" />  <!--레티나iphone-->
+    <link rel="apple-touch-icon" sizes="76x76" href="#" /><!--기본ipone-->
+    <link rel="apple-touch-icon" sizes="120x120" href="#" /><!--기본형ipad-->
+    <link rel="apple-touch-icon" sizes="152x152" href="#" /><!--레티나ipad-->
+<link rel="shortcut icon" type="image/x-icon" href="#"><!--안드로이드 72x72-->
+
+ 
+    <title>Document</title>
+    <style type="text/css">
+
+        /*        h1 + img{} 선택자중에서 바로뒤에오는 형제*/
+/*        h1 ~ #img_box{}같은레벨 선택자중에서 뒤에오는형제*/
+     
+        
+        img{width:300px; height:300px;}
+        #img_box{width:310px; height:310px; background-color: #FFE6FD;
+        overflow: hidden;}
+        #img_box img {width:100%}  /*자손의 %는 부모 px이 기준 ex 부모가 200px이면 자손의 100% =200px*/
+        #bg_img{width:310px; height:310px; 
+            background-image:url("img/icon_08.png");
+        background-size:100%;} /*background-attachment:fixed*마우스에따라 그림이 따라움직임 attachment:scroll 은 스크롤따라움직임/
+    </style>
+    
+<script type="text/javascript"> </script>
+        
+</head>
+<body>
+    
+<div id="wrap">
+    <h1>이미지불러오기</h1>
+    <img src="./img/icon_06.png" alt="엘리자벳XIA" />
+<div id="img_box">
+   <img src="./img/icon_07.png" alt="XIA" />
+    
+</div><!--img_box-->
+    <div id="bg_img"></div> <!--bg_img-->
+</div><!--wrap-->
+    
+</body>
+</html>

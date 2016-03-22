@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="apple-touch-icon" sizes="60x60"  href="#">
+   <link rel="apple-touch-icon" sizes="76x76"  href="#">
+   <link rel="apple-touch-icon" sizes="120x120"  href="#">
+   <link rel="apple-touch-icon" sizes="152x152"  href="#">
+    <link rel="apple-touch-icon" href="#">
+     <!--[if lte IE 9]>
+   alert("브라우저를 업데이트 하거나 크롬을 사용하세요.");
+ <![end if]-->
+<!--cc:ie6-->
+    <title></title>
+    <style type="text/css">
+        .btn{cursor:pointer;}
+        input{type="submit"{width: 100px; height:50px; background-color:#eee;}}
+    </style>
+    <script type="text/javascript"></script>
+    
+
+    
+</head>
+<body>
+<div id="wrap">
+    <h1>form</h1>
+    <form action="#" method="post" name="">
+        <fieldset id="form_01">
+        <legend>기존수업내용정리</legend>
+        
+    
+        <label for="choco1">아이디</label>
+        <input type="text" name="choco1" id="choco1" value="" />
+        <label for="choco3">아이디</label>
+        <input type="password" name="choco2" id="choco2" value="" />
+     <label for="choco3">아이디</label>
+        <input type="hidden" name="choco3" id="choco3" value="" />
+           <!------------------------------------------------------------------------------->
+        
+        <input type="radio" name="set_r" id="radio_01" value="aaaa" />
+        <label for="radio_01">sel</label>
+        <input type="radio" name="set_r" id="radio_02" value="aaaa" checked="checked" />
+        <label for="radio_02">sel</label>
+        <input type="radio" name="set_r" id="radio_03" value="aaaa" />
+        <label for="radio_03">sel</label>
+        <input type="checkbox" name="set_c" id="ch_01" value="aaaa" />
+        <label for="ck_01">sel</label>
+        <input type="checkbox" name="set_c" id="ch_02" value="aaaa" checked="checked"/>
+        <label for="ck_02">sel</label>
+        <input type="checkbox" name="set_c" id="ch_03" value="aaaa" />
+        <label for="ck_03">sel</label>
+        </fieldset><!--#form-->
+        
+     <fieldset id="form_02">
+         <legend>추가 내용 이해하기!</legend>
+     <input type="submit" name="" id="" value="확인 및 제출"  /><!--확인/완료버튼-->
+     <input type="reset" name="" id="" value="cancle"  /><!--취소버튼-->
+     <label for="cancleBtn">your cancle ok?</label>
+     <input type="button" name="" id=""  value="중복확인" /><!--확인/취소버튼-->
+     <input type="image" src="./img/icon_10.png"  width="300" name="" id="" value="준쭈" /><!--이미지형태의버튼-->
+     <input type="file" name="" id=""  value= "" /><!--자료첨부버튼-->
+ 
+       </fieldset>
+       
+       
+    <fieldset id="form_03">
+        <legend>멀티기능을 하는 form</legend>
+        <p>&lt;input type= &#39;&#39; text &#39;&#39; &gt;역할</p>
+        <label for="textBox">내용을 입력하세요</label>
+        <textarea name="" id="textBox" cols="100" rows="3" readonly="readonly"></textarea>
+        <!--readonly를 적어주면 내용 수정 불가. 읽기만 가능 안적으면 수정가능-->
+        
+        
+        <!--name=> 서버언어와 연결하는 이름값
+               id=> html 문서내에 한번만 사용가능한 이름값이며, 연결의 기능을한다.
+               (*form영역에서는 lable코드의 속성 for의 속성값과 일치해야한다el
+               -->
+        <p>선택의 기능을 하는 멀티(&lt; input type="radio" /&gt;) </p>
+   <label for="multi_sel">좋아하는 멤버를 선택하세요</label>
+        <select name="multi_sel" id="multi_sel">
+        <option>선택하세요</option>
+    <optgroup label="여성의 경우">
+<!--        <option>-여성의 경우-</option>-->
+       <option value="정윤호">정윤호</option>
+        <option value="김재중">김재중</option>
+        <option value="박유천">박유천</option>
+        <option value="김준수">김준수</option>
+        <option value="심창민">심창민</option>
+    </optgroup>
+    <optgroup label="여성의 경우">
+<!--       <option>남성의경우</option>-->
+        <option value="박보영">박보영</option>
+        <option value="아이유">아이유</option>
+        <option value="정수정">정수정</option>
+        <option value="김태연">김태연</option>
+        <option value="배수지">배수지</option>
+    </optgroup>
+    </select>
+        <p>버튼의 또다른형태</p>
+        <button type="button" class="btn">중복확인<span class="hidden"></span></button><!--버튼 태그안의 내용이 값이므로 따로 value 필요없음음-->
+         <input type="button" name="" id="btn"  value="중복확인" /><!--확인/취소버튼-->
+         <label for="btn">중복확인가능</label>
+    </fieldset><!--form_03-->
+       <!--.btn{cursor:pointer; 은 손가락 모양으로 커서가 바뀜.
+         원하는위치에 클래스 지정만 해주면됨됨-->
+        
+    </form>
+</div><!--#wrap-->
+</body>
+</html>

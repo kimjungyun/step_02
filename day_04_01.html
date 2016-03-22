@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="60x60" href="#" />
+    <link rel="apple-touch-icon" sizes="76x76" href="#" />
+    <link rel="apple-touch-icon" sizes="120x120" href="#" />
+    <link rel="apple-touch-icon" sizes="152x152" href="#" />
+    <link rel="shortcut icon" type="image/x-icon" href="#" />
+    <title>Day_04_0318</title>
+    <style type="text/css">
+        table, tr, th, td, thead, tbody, tfoot{
+            border-width:1px; border-style:solid; border-color:#333;
+            border-spacing:0; border-collapse:collapse;
+        }
+        table{width:600px; height:500px;}
+        thead{background-color:#fac;}
+        tfoot{background-color:#cfc;}
+    </style>
+    <script type="text/javascript"></script>
+</head>
+<body>
+<div id="wrap">
+    <h1>table이해2</h1>
+    <table summary="테이블의 상세한 내용을 추가로 이해할수 있다.">
+    <caption>테이블 구조이해2</caption>
+    <thead>
+        <tr>
+            <th scope="col">number</th>
+            <th scope="col">아이디</th>
+            <th scope="col">이름</th>
+            <th scope="col">내용</th>
+        </tr>
+    </thead>
+      <tfoot>
+        <tr><td>총</td><td colspan="3">동방신기</td></tr>
+    </tfoot>
+    <tbody>
+    <tr><td scope="row">1</td>   <td>uknow</td>    <td>윤호</td>  <td rowspan="2">윤재</td></tr>
+    <tr><td scope="row">2</td>   <td>hero</td>    <td>재중</td>                            </tr>
+    <tr><td scope="row">3</td>   <td>micky</td> <td>유천</td>  <td>쵸</td></tr>
+    <tr><td scope="row">4</td>   <td>xia</td>      <td>준수</td>  <td>샤</td></tr>
+    <tr><td scope="row">5</td>   <td>max</td>    <td>창민</td>   <td>밍</td></tr>
+   </tbody>
+  
+    </table>
+</div>
+</body>
+</html>
